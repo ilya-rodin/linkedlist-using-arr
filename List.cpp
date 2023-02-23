@@ -48,7 +48,7 @@ LinearList::~LinearList()
 		base[i].elem = 0;
 	}
 	delete[] base;
-	cout << "List is fully deleted!" << endl;
+	//cout << "List is fully deleted!" << endl;
 }
 
 LinearList LinearList::operator+(LinearList& otherList)
