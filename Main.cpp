@@ -23,8 +23,6 @@ int main()
 
 	// '>>' overloading
 	cin >> cinList;
-	cin >> cinList;
-	cin >> cinList;
 
 	cout << cinList;
 }

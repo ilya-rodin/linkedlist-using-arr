@@ -235,11 +235,19 @@ istream& operator>>(istream& in, LinearList& list)
 		throw "List is full!";
 	}
 
-	char toAdd;
+	while (true)
+	{
+		char newElem;
+		cout << "Enter data to add (\\ to exit): ";
+		in >> newElem;
 
-	cout << "Enter data: ";
-	in >> toAdd;
+		if (newElem == '\\')
+		{
+			break;
+		}
 
-	list.addNode(toAdd);
+		list.addNode(newElem);
+	}
+
 	return in;
 }
