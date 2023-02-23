@@ -31,4 +31,5 @@ public:
 	int len();
 	bool isEmpty();
 	friend ostream& operator<<(ostream&, LinearList&);
+	friend istream& operator>>(istream&, LinearList&);
 };

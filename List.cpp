@@ -227,3 +227,19 @@ ostream& operator<<(ostream& out, LinearList& list)
 	out << "\n";
 	return out;
 }
+
+istream& operator>>(istream& in, LinearList& list)
+{
+	if (list.beginFreeSpace == -1)
+	{
+		throw "List is full!";
+	}
+
+	char toAdd;
+
+	cout << "Enter data: ";
+	in >> toAdd;
+
+	list.addNode(toAdd);
+	return in;
+}
