@@ -3,10 +3,10 @@
 
 int main()
 {
-	LinearList list(6);
-	LinearList list2;
-	LinearList concatedList;
-	LinearList cinList(3);
+	LinearList<char> list(6);
+	LinearList<char> list2;
+	LinearList<char> concatedList;
+	LinearList<char> cinList(10);
 
 	list.addNode('a');
 	list.addNode('b');
